@@ -1,0 +1,12 @@
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.csprojAssemblyReference.cache
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.frmMüşteriEkle.resources
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.frmSatis.resources
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.Properties.Resources.resources
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.csproj.GenerateResource.cache
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.csproj.CoreCompileInputs.cache
+C:\Users\Aysenur\Desktop\Stok_\bin\Debug\Stok_.exe.config
+C:\Users\Aysenur\Desktop\Stok_\bin\Debug\Stok_.exe
+C:\Users\Aysenur\Desktop\Stok_\bin\Debug\Stok_.pdb
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.exe
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.pdb
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.frmMüşteriListele.resources
