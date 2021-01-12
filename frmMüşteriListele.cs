@@ -93,5 +93,10 @@ namespace Stok_
             baglanti.Close();
 
         }
+
+        private void txtTc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

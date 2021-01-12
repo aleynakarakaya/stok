@@ -10,3 +10,8 @@ C:\Users\Aysenur\Desktop\Stok_\bin\Debug\Stok_.pdb
 C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.exe
 C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.pdb
 C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.frmMüşteriListele.resources
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.frmKategori.resources
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.frmMarka.resources
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.frmÜrünEkle.resources
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.frmÜrünListele.resources
+C:\Users\Aysenur\Desktop\Stok_\obj\Debug\Stok_.frmSatışListele.resources

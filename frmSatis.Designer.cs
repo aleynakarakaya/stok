@@ -55,6 +55,8 @@ namespace Stok_
             this.label9 = new System.Windows.Forms.Label();
             this.lblGenelToplam = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -127,6 +129,7 @@ namespace Stok_
             this.txtTc.Name = "txtTc";
             this.txtTc.Size = new System.Drawing.Size(100, 20);
             this.txtTc.TabIndex = 3;
+            this.txtTc.TextChanged += new System.EventHandler(this.txtTc_TextChanged);
             // 
             // txtTelefon
             // 
@@ -170,6 +173,7 @@ namespace Stok_
             this.label8.Size = new System.Drawing.Size(67, 13);
             this.label8.TabIndex = 14;
             this.label8.Text = "Toplam Fiyat";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -213,6 +217,7 @@ namespace Stok_
             this.txtToplamFiyati.Name = "txtToplamFiyati";
             this.txtToplamFiyati.Size = new System.Drawing.Size(100, 20);
             this.txtToplamFiyati.TabIndex = 9;
+            this.txtToplamFiyati.TextChanged += new System.EventHandler(this.txtToplamFiyati_TextChanged);
             // 
             // txtSatışFiyatı
             // 
@@ -220,6 +225,7 @@ namespace Stok_
             this.txtSatışFiyatı.Name = "txtSatışFiyatı";
             this.txtSatışFiyatı.Size = new System.Drawing.Size(100, 20);
             this.txtSatışFiyatı.TabIndex = 7;
+            this.txtSatışFiyatı.TextChanged += new System.EventHandler(this.txtSatışFiyatı_TextChanged);
             // 
             // txtMiktari
             // 
@@ -227,6 +233,9 @@ namespace Stok_
             this.txtMiktari.Name = "txtMiktari";
             this.txtMiktari.Size = new System.Drawing.Size(100, 20);
             this.txtMiktari.TabIndex = 5;
+            this.txtMiktari.Text = "1";
+            this.txtMiktari.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMiktari.TextChanged += new System.EventHandler(this.txtMiktari_TextChanged);
             // 
             // txtÜrünAdı
             // 
@@ -241,6 +250,7 @@ namespace Stok_
             this.txtBarkodNo.Name = "txtBarkodNo";
             this.txtBarkodNo.Size = new System.Drawing.Size(100, 20);
             this.txtBarkodNo.TabIndex = 1;
+            this.txtBarkodNo.TextChanged += new System.EventHandler(this.txtBarkodNo_TextChanged);
             // 
             // btnEkle
             // 
@@ -250,6 +260,7 @@ namespace Stok_
             this.btnEkle.TabIndex = 3;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnSil
             // 
@@ -259,6 +270,7 @@ namespace Stok_
             this.btnSil.TabIndex = 4;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnSatışİptal
             // 
@@ -268,6 +280,7 @@ namespace Stok_
             this.btnSatışİptal.TabIndex = 5;
             this.btnSatışİptal.Text = "Satış İptal";
             this.btnSatışİptal.UseVisualStyleBackColor = true;
+            this.btnSatışİptal.Click += new System.EventHandler(this.btnSatışİptal_Click);
             // 
             // btnSatışYap
             // 
@@ -300,6 +313,8 @@ namespace Stok_
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
@@ -308,40 +323,63 @@ namespace Stok_
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(903, 100);
+            this.panel1.Size = new System.Drawing.Size(985, 100);
             this.panel1.TabIndex = 9;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(850, 28);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 51);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Marka";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(721, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 51);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Kategori";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(689, 28);
+            this.button9.Location = new System.Drawing.Point(573, 28);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(123, 51);
             this.button9.TabIndex = 4;
             this.button9.Text = "Satışları Listeleme";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(485, 28);
+            this.button8.Location = new System.Drawing.Point(424, 28);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(123, 51);
             this.button8.TabIndex = 3;
             this.button8.Text = "Ürün Listeleme";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(356, 28);
+            this.button7.Location = new System.Drawing.Point(295, 28);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(123, 51);
             this.button7.TabIndex = 2;
-            this.button7.Text = "Üürün Ekleme";
+            this.button7.Text = "Ürün Ekleme";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(176, 28);
+            this.button6.Location = new System.Drawing.Point(144, 28);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(123, 51);
             this.button6.TabIndex = 1;
@@ -351,7 +389,7 @@ namespace Stok_
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(47, 28);
+            this.button5.Location = new System.Drawing.Point(15, 28);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(123, 51);
             this.button5.TabIndex = 0;
@@ -361,10 +399,11 @@ namespace Stok_
             // 
             // frmSatis
             // 
+            this.AcceptButton = this.btnEkle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(903, 515);
+            this.ClientSize = new System.Drawing.Size(985, 533);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblGenelToplam);
             this.Controls.Add(this.label9);
@@ -423,6 +462,8 @@ namespace Stok_
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKategori.Designer.cs">
+      <DependentUpon>frmKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarka.Designer.cs">
+      <DependentUpon>frmMarka.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMüşteriEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,8 +76,32 @@
     <Compile Include="frmSatis.Designer.cs">
       <DependentUpon>frmSatis.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSatışListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatışListele.Designer.cs">
+      <DependentUpon>frmSatışListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmÜrünEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmÜrünEkle.Designer.cs">
+      <DependentUpon>frmÜrünEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmÜrünListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmÜrünListele.Designer.cs">
+      <DependentUpon>frmÜrünListele.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmKategori.resx">
+      <DependentUpon>frmKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarka.resx">
+      <DependentUpon>frmMarka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMüşteriEkle.resx">
       <DependentUpon>frmMüşteriEkle.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +110,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSatis.resx">
       <DependentUpon>frmSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatışListele.resx">
+      <DependentUpon>frmSatışListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmÜrünEkle.resx">
+      <DependentUpon>frmÜrünEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmÜrünListele.resx">
+      <DependentUpon>frmÜrünListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

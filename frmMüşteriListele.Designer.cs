@@ -102,6 +102,7 @@ namespace Stok_
             this.txtTc.Name = "txtTc";
             this.txtTc.Size = new System.Drawing.Size(100, 20);
             this.txtTc.TabIndex = 16;
+            this.txtTc.TextChanged += new System.EventHandler(this.txtTc_TextChanged);
             // 
             // label5
             // 
